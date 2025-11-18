@@ -11,3 +11,8 @@ def character_count(book_text):
         else:
             char_count[char] += 1
     return char_count
+
+def sort_dict(character_count):
+    char_sort_list = sorted(character_count.items(), key = lambda x: x[1], reverse = True)
+    char_sort = dict(char_sort_list)
+    return char_sort
